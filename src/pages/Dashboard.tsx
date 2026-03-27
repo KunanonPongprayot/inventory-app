@@ -13,6 +13,7 @@ const Dashboard = () => {
   const outOfStock = products.filter(p => p.quantity === 0).length
 
   return (
+    <div className="max-w-5xl mx-auto p-6">
     <div className="p-6 space-y-4">
       <h1 className="text-2xl font-bold">Dashboard</h1>
 
@@ -32,6 +33,7 @@ const Dashboard = () => {
           <h2>{outOfStock}</h2>
         </div>
       </div>
+    </div>
     </div>
   )
 }
